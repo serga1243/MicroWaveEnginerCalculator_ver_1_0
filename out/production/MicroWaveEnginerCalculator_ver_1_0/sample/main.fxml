@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <MenuButton fx:id="menu_button" layoutX="4.0" layoutY="2.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="87.0" style="-fx-background-color: dd0031;" text="Меню" textFill="WHITE">
+        <items>
+            <MenuItem fx:id="menu_about_color_settings" mnemonicParsing="false" text="Настройки" />
+          <MenuItem fx:id="menu_about_programm" mnemonicParsing="false" text="О программе" />
+            <MenuItem fx:id="menu_exit" mnemonicParsing="false" text="Выход" />
+        </items>
+         <font>
+            <Font name="Corbel" size="13.0" />
+         </font>
+      </MenuButton>
+      <TabPane layoutX="5.0" layoutY="28.0" prefHeight="970.0" prefWidth="1910.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Напряжение, ток и сила тока">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="1908.0">
+                     <children>
+                        <ImageView fx:id="image1" cache="true" cacheHint="QUALITY" fitHeight="1335.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/red_grey/0001.png" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutX="1592.0" layoutY="63.0" prefHeight="756.0" prefWidth="295.0" style="-fx-background-color: DDDDDD;" />
+                        <Pane layoutX="648.0" layoutY="504.0" prefHeight="374.0" prefWidth="295.0" style="-fx-background-color: DDDDDD;" />
+                        <Pane layoutX="648.0" layoutY="63.0" prefHeight="378.0" prefWidth="295.0" style="-fx-background-color: DDDDDD;" />
+                        <TextField fx:id="volts_to_dbmkv_in0" layoutX="648.0" layoutY="126.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="volts_to_dbmkv_out0" editable="false" layoutX="648.0" layoutY="157.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="dbvkv_to_volts_in0" layoutX="648.0" layoutY="63.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="dbvkv_to_volts_out0" editable="false" layoutX="648.0" layoutY="94.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="dbv_to_volts_in0" layoutX="648.0" layoutY="189.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="dbv_to_volts_out0" editable="false" layoutX="648.0" layoutY="220.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="volts_to_dbv_in0" layoutX="648.0" layoutY="252.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="volts_to_dbv_out0" editable="false" layoutX="648.0" layoutY="282.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="dbv_to_dbmkv_in0" layoutX="648.0" layoutY="315.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="dbv_to_dbmkv_out0" editable="false" layoutX="648.0" layoutY="345.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="dbmkv_to_dbv_in0" layoutX="648.0" layoutY="378.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="dbmkv_to_dbv_out0" editable="false" layoutX="648.0" layoutY="408.0" prefHeight="28.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="dbmka_to_mka_in0" layoutX="648.0" layoutY="504.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="dbmka_to_mka_out0" editable="false" layoutX="648.0" layoutY="534.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="mka_to_dbmka_in0" layoutX="648.0" layoutY="567.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="mka_to_dbmka_out0" editable="false" layoutX="648.0" layoutY="597.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaaa1" layoutX="648.0" layoutY="693.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaaa2" editable="false" layoutX="648.0" layoutY="723.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaaa3" layoutX="648.0" layoutY="755.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaaa4" editable="false" layoutX="648.0" layoutY="785.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaaa5" layoutX="648.0" layoutY="817.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaaa6" editable="false" layoutX="648.0" layoutY="847.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaaa10" layoutX="648.0" layoutY="630.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaaa11" editable="false" layoutX="648.0" layoutY="660.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa1" layoutX="1592.0" layoutY="63.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa2" editable="false" layoutX="1592.0" layoutY="94.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa3" layoutX="1592.0" layoutY="125.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa4" editable="false" layoutX="1592.0" layoutY="155.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa5" layoutX="1592.0" layoutY="189.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa6" editable="false" layoutX="1592.0" layoutY="219.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa7" layoutX="1592.0" layoutY="251.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa8" editable="false" layoutX="1592.0" layoutY="281.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa9" layoutX="1592.0" layoutY="316.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa10" editable="false" layoutX="1592.0" layoutY="346.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa11" layoutX="1592.0" layoutY="377.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa12" editable="false" layoutX="1592.0" layoutY="407.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa13" layoutX="1592.0" layoutY="505.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa14" editable="false" layoutX="1592.0" layoutY="535.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa15" layoutX="1592.0" layoutY="566.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa16" editable="false" layoutX="1592.0" layoutY="596.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa17" layoutX="1592.0" layoutY="631.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa18" editable="false" layoutX="1592.0" layoutY="661.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa19" layoutX="1592.0" layoutY="692.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa20" editable="false" layoutX="1592.0" layoutY="722.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa21" layoutX="1592.0" layoutY="754.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaa22" editable="false" layoutX="1592.0" layoutY="784.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaaaaa12" layoutX="1592.0" layoutY="440.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="aaaaaa13" editable="false" layoutX="1592.0" layoutY="470.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Мощность и антенны">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2000.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane layoutX="-1.0" layoutY="-1.0" prefHeight="1000.0" prefWidth="1910.0">
+                           <content>
+                              <AnchorPane prefHeight="1350.0" prefWidth="1910.0">
+                                 <children>
+                                    <ImageView fx:id="image2" cache="true" cacheHint="QUALITY" fitHeight="1342.0" fitWidth="1891.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/red_grey/0002.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane layoutX="648.0" layoutY="63.0" prefHeight="157.0" prefWidth="295.0" style="-fx-background-color: DDDDDD;" />
+                                    <Pane layoutX="648.0" layoutY="218.0" prefHeight="350.0" prefWidth="295.0" style="-fx-background-color: DDDDDD;" />
+                                    <Pane layoutX="1592.0" layoutY="63.0" prefHeight="347.0" prefWidth="295.0" style="-fx-background-color: DDDDDD;" />
+                                    <Pane layoutX="1592.0" layoutY="472.0" prefHeight="253.0" prefWidth="295.0" style="-fx-background-color: DDDDDD;" />
+                                    <Pane layoutX="1592.0" layoutY="788.0" prefHeight="451.0" prefWidth="295.0" style="-fx-background-color: DDDDDD;" />
+                                    <Pane layoutX="648.0" layoutY="788.0" prefHeight="452.0" prefWidth="295.0" style="-fx-background-color: DDDDDD;" />
+                                    <TextField fx:id="bbb1" layoutX="648.0" layoutY="63.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb2" editable="false" layoutX="648.0" layoutY="93.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb3" layoutX="648.0" layoutY="158.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb4" editable="false" layoutX="648.0" layoutY="188.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb5" layoutX="648.0" layoutY="286.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb6" editable="false" layoutX="648.0" layoutY="316.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb7" layoutX="648.0" layoutY="346.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb8" editable="false" layoutX="648.0" layoutY="376.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb9" layoutX="648.0" layoutY="411.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb10" editable="false" layoutX="648.0" layoutY="441.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb11" layoutX="648.0" layoutY="475.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb12" editable="false" layoutX="648.0" layoutY="505.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb27" editable="false" layoutX="648.0" layoutY="826.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb29" layoutX="648.0" layoutY="886.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb26" layoutX="648.0" layoutY="794.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb30" editable="false" layoutX="648.0" layoutY="915.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb28" layoutX="648.0" layoutY="856.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb16" layoutX="1592.0" layoutY="346.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb17" editable="false" layoutX="1592.0" layoutY="376.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb15" layoutX="1592.0" layoutY="316.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb14" layoutX="1592.0" layoutY="286.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb19" layoutX="1592.0" layoutY="505.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb20" editable="false" layoutX="1592.0" layoutY="535.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb18" layoutX="1592.0" layoutY="475.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb21" layoutX="1592.0" layoutY="570.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb22" editable="false" layoutX="1592.0" layoutY="600.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb24" layoutX="1592.0" layoutY="663.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb25" editable="false" layoutX="1592.0" layoutY="693.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb23" layoutX="1592.0" layoutY="633.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb32" editable="false" layoutX="1592.0" layoutY="826.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb34" layoutX="1592.0" layoutY="886.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb31" layoutX="1592.0" layoutY="794.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb35" editable="false" layoutX="1592.0" layoutY="915.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb33" layoutX="1592.0" layoutY="856.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb36" editable="false" layoutX="648.0" layoutY="981.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb37" layoutX="648.0" layoutY="1041.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb38" layoutX="648.0" layoutY="951.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb39" editable="false" layoutX="648.0" layoutY="1072.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb40" layoutX="648.0" layoutY="1011.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb41" editable="false" layoutX="648.0" layoutY="1142.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb42" layoutX="648.0" layoutY="1202.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb43" layoutX="648.0" layoutY="1112.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb44" editable="false" layoutX="648.0" layoutY="1232.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb45" layoutX="648.0" layoutY="1172.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb46" editable="false" layoutX="1592.0" layoutY="981.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb47" layoutX="1592.0" layoutY="1041.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb48" layoutX="1592.0" layoutY="951.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb49" editable="false" layoutX="1592.0" layoutY="1071.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb50" layoutX="1592.0" layoutY="1011.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb51" editable="false" layoutX="1592.0" layoutY="1142.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb52" layoutX="1592.0" layoutY="1202.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb53" layoutX="1592.0" layoutY="1112.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb54" editable="false" layoutX="1592.0" layoutY="1232.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb55" layoutX="1592.0" layoutY="1172.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb161" layoutX="1592.0" layoutY="93.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb171" editable="false" layoutX="1592.0" layoutY="123.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb151" layoutX="1592.0" layoutY="63.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb162" layoutX="1592.0" layoutY="218.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb172" editable="false" layoutX="1592.0" layoutY="248.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb152" layoutX="1592.0" layoutY="188.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                    <TextField fx:id="bbb141" layoutX="1592.0" layoutY="158.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                                 </children>
+                              </AnchorPane>
+                           </content></ScrollPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="КВС антенны">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1337.0" prefWidth="1910.0">
+                     <children>
+                        <ImageView fx:id="image3" cache="true" cacheHint="QUALITY" fitHeight="1335.0" fitWidth="2614.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/red_grey/0003.png" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutX="648.0" layoutY="63.0" prefHeight="95.0" prefWidth="295.0" style="-fx-background-color: DDDDDD;" />
+                        <Pane layoutX="668.0" layoutY="220.0" prefHeight="315.0" prefWidth="275.0" style="-fx-background-color: DDDDDD;" />
+                        <Pane layoutX="1592.0" layoutY="63.0" prefHeight="95.0" prefWidth="295.0" style="-fx-background-color: DDDDDD;" />
+                        <Pane layoutX="1612.0" layoutY="220.0" prefHeight="252.0" prefWidth="275.0" style="-fx-background-color: DDDDDD;" />
+                        <TextField fx:id="ccc1" layoutX="648.0" layoutY="63.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc2" layoutX="648.0" layoutY="93.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc3" editable="false" layoutX="648.0" layoutY="123.0" prefHeight="31.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc4" layoutX="1592.0" layoutY="63.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc5" layoutX="1592.0" layoutY="93.0" prefHeight="31.0" prefWidth="295.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc6" editable="false" layoutX="1592.0" layoutY="123.0" prefHeight="28.0" prefWidth="295.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc7" layoutX="668.0" layoutY="221.0" prefHeight="31.0" prefWidth="275.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc8" editable="false" layoutX="668.0" layoutY="250.0" prefHeight="31.0" prefWidth="275.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc9" layoutX="668.0" layoutY="283.0" prefHeight="31.0" prefWidth="275.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc10" editable="false" layoutX="668.0" layoutY="313.0" prefHeight="31.0" prefWidth="275.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc15" layoutX="668.0" layoutY="472.0" prefHeight="31.0" prefWidth="275.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc16" editable="false" layoutX="668.0" layoutY="502.0" prefHeight="31.0" prefWidth="275.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc17" layoutX="1612.0" layoutY="221.0" prefHeight="31.0" prefWidth="275.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc18" editable="false" layoutX="1612.0" layoutY="250.0" prefHeight="31.0" prefWidth="275.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc19" layoutX="1612.0" layoutY="284.0" prefHeight="31.0" prefWidth="275.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc20" editable="false" layoutX="1612.0" layoutY="314.0" prefHeight="31.0" prefWidth="275.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc21" layoutX="1612.0" layoutY="345.0" prefHeight="31.0" prefWidth="275.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc22" editable="false" layoutX="1612.0" layoutY="375.0" prefHeight="31.0" prefWidth="275.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc23" layoutX="1612.0" layoutY="409.0" prefHeight="31.0" prefWidth="275.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc24" editable="false" layoutX="1612.0" layoutY="439.0" prefHeight="31.0" prefWidth="275.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc13" layoutX="668.0" layoutY="409.0" prefHeight="31.0" prefWidth="275.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc14" editable="false" layoutX="668.0" layoutY="439.0" prefHeight="31.0" prefWidth="275.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc11" layoutX="668.0" layoutY="346.0" prefHeight="31.0" prefWidth="275.0" promptText="введи как 100.15 или 1.0015e2" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                        <TextField fx:id="ccc12" editable="false" layoutX="668.0" layoutY="376.0" prefHeight="31.0" prefWidth="275.0" promptText="ответ" style="-fx-border-width: 1; -fx-background-color: DDDDDD; -fx-border-color: DDDDDD;" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
