@@ -515,37 +515,37 @@ public class Controller {
         // ------- LOG -> LINEAR VOLTAGE ----------------------
         // ----------------------------------------------------
 
-        dbvkv_to_volts_in0.setOnAction(event -> {
+        dbvkv_to_volts_in0.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(dbvkv_to_volts_in0.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBmkV_to_Volts");
             dbvkv_to_volts_out0.setText(String.valueOf(ans[0]));
         });
 
-        volts_to_dbmkv_in0.setOnAction(event -> {
+        volts_to_dbmkv_in0.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(volts_to_dbmkv_in0.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Volts_to_dBmkV");
             volts_to_dbmkv_out0.setText(String.valueOf(ans[0]));
         });
 
-        dbv_to_volts_in0.setOnAction(event -> {
+        dbv_to_volts_in0.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(dbv_to_volts_in0.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBV_to_Volts");
             dbv_to_volts_out0.setText(String.valueOf(ans[0]));
         });
 
-        volts_to_dbv_in0.setOnAction(event -> {
+        volts_to_dbv_in0.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(volts_to_dbv_in0.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Volts_to_dBV");
             volts_to_dbv_out0.setText(String.valueOf(ans[0]));
         });
 
-        dbv_to_dbmkv_in0.setOnAction(event -> {
+        dbv_to_dbmkv_in0.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(dbv_to_dbmkv_in0.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBV_to_dBmkV");
             dbv_to_dbmkv_out0.setText(String.valueOf(ans[0]));
         });
 
-        dbmkv_to_dbv_in0.setOnAction(event -> {
+        dbmkv_to_dbv_in0.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(dbmkv_to_dbv_in0.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBmkV_to_dBV");
             dbmkv_to_dbv_out0.setText(String.valueOf(ans[0]));
@@ -555,37 +555,37 @@ public class Controller {
         // ------- LOG -> LINEAR CURRENT ----------------------
         // ----------------------------------------------------
 
-        dbmka_to_mka_in0.setOnAction(event -> {
+        dbmka_to_mka_in0.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(dbmka_to_mka_in0.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBmkA_to_mkA");
             dbmka_to_mka_out0.setText(String.valueOf(ans[0]));
         });
 
-        mka_to_dbmka_in0.setOnAction(event -> {
+        mka_to_dbmka_in0.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(mka_to_dbmka_in0.getText() + "d")};
             double[] ans = Funcs.calculate(data, "mkA_to_dBmkA");
             mka_to_dbmka_out0.setText(String.valueOf(ans[0]));
         });
 
-        aaaa10.setOnAction(event -> {
+        aaaa10.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(aaaa10.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBA_to_A");
             aaaa11.setText(String.valueOf(ans[0]));
         });
 
-        aaaa1.setOnAction(event -> {
+        aaaa1.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(aaaa1.getText() + "d")};
             double[] ans = Funcs.calculate(data, "A_to_dBA");
             aaaa2.setText(String.valueOf(ans[0]));
         });
 
-        aaaa3.setOnAction(event -> {
+        aaaa3.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(aaaa3.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBA_to_dBmkA");
             aaaa4.setText(String.valueOf(ans[0]));
         });
 
-        aaaa5.setOnAction(event -> {
+        aaaa5.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(aaaa5.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBmkA_to_dBA");
             aaaa6.setText(String.valueOf(ans[0]));
@@ -595,37 +595,37 @@ public class Controller {
         // ------- LOG -> LINEAR POWER ------------------------
         // ----------------------------------------------------
 
-        bbb1.setOnAction(event -> {
+        bbb1.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb1.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBm_to_Watts");
             bbb2.setText(String.valueOf(ans[0]));
         });
 
-        bbb3.setOnAction(event -> {
+        bbb3.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb3.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Watts_to_dBm");
             bbb4.setText(String.valueOf(ans[0]));
         });
 
-        bbb5.setOnAction(event -> {
+        bbb5.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb5.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBW_to_Watts");
             bbb6.setText(String.valueOf(ans[0]));
         });
 
-        bbb7.setOnAction(event -> {
+        bbb7.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb7.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Watts_to_dBW");
             bbb8.setText(String.valueOf(ans[0]));
         });
 
-        bbb9.setOnAction(event -> {
+        bbb9.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb9.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBW_to_dBm");
             bbb10.setText(String.valueOf(ans[0]));
         });
 
-        bbb11.setOnAction(event -> {
+        bbb11.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb11.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBm_to_dBW");
             bbb12.setText(String.valueOf(ans[0]));
@@ -635,102 +635,102 @@ public class Controller {
         // ------- TERM CONVERSIONS ---------------------------
         // ----------------------------------------------------
 
-        bbb26.setOnAction(event -> {
+        bbb26.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb26.getText() + "d"), 50d};
             double[] ans = Funcs.calculate(data, "dBm_to_dBmkV");
             bbb27.setText(String.valueOf(ans[0]));
         });
-        bbb28.setOnAction(event -> {
+        bbb28.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb28.getText() + "d"), Double.parseDouble(bbb29.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBm_to_dBmkV");
             bbb30.setText(String.valueOf(ans[0]));
         });
-        bbb29.setOnAction(event -> {
+        bbb29.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb28.getText() + "d"), Double.parseDouble(bbb29.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBm_to_dBmkV");
             bbb30.setText(String.valueOf(ans[0]));
         });
 
 
-        bbb31.setOnAction(event -> {
+        bbb31.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb31.getText() + "d"), 50d};
             double[] ans = Funcs.calculate(data, "dBmkV_to_dBm");
             bbb32.setText(String.valueOf(ans[0]));
         });
-        bbb33.setOnAction(event -> {
+        bbb33.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb33.getText() + "d"), Double.parseDouble(bbb34.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBmkV_to_dBm");
             bbb35.setText(String.valueOf(ans[0]));
         });
-        bbb34.setOnAction(event -> {
+        bbb34.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb33.getText() + "d"), Double.parseDouble(bbb34.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBmkV_to_dBm");
             bbb35.setText(String.valueOf(ans[0]));
         });
 
 
-        bbb38.setOnAction(event -> {
+        bbb38.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb38.getText() + "d"), 50d};
             double[] ans = Funcs.calculate(data, "dBm_to_dBmkA");
             bbb36.setText(String.valueOf(ans[0]));
         });
-        bbb40.setOnAction(event -> {
+        bbb40.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb40.getText() + "d"), Double.parseDouble(bbb37.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBm_to_dBmkA");
             bbb39.setText(String.valueOf(ans[0]));
         });
-        bbb37.setOnAction(event -> {
+        bbb37.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb40.getText() + "d"), Double.parseDouble(bbb37.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBm_to_dBmkA");
             bbb39.setText(String.valueOf(ans[0]));
         });
 
 
-        bbb48.setOnAction(event -> {
+        bbb48.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb48.getText() + "d"), 50d};
             double[] ans = Funcs.calculate(data, "dBmkA_to_dBm");
             bbb46.setText(String.valueOf(ans[0]));
         });
-        bbb50.setOnAction(event -> {
+        bbb50.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb50.getText() + "d"), Double.parseDouble(bbb47.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBmkA_to_dBm");
             bbb49.setText(String.valueOf(ans[0]));
         });
-        bbb47.setOnAction(event -> {
+        bbb47.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb50.getText() + "d"), Double.parseDouble(bbb47.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBmkA_to_dBm");
             bbb49.setText(String.valueOf(ans[0]));
         });
 
 
-        bbb43.setOnAction(event -> {
+        bbb43.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb43.getText() + "d"), 50d};
             double[] ans = Funcs.calculate(data, "dBmkA_to_dBmkV");
             bbb41.setText(String.valueOf(ans[0]));
         });
-        bbb45.setOnAction(event -> {
+        bbb45.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb45.getText() + "d"), Double.parseDouble(bbb42.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBmkA_to_dBmkV");
             bbb44.setText(String.valueOf(ans[0]));
         });
-        bbb42.setOnAction(event -> {
+        bbb42.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb45.getText() + "d"), Double.parseDouble(bbb42.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBmkA_to_dBmkV");
             bbb44.setText(String.valueOf(ans[0]));
         });
 
 
-        bbb53.setOnAction(event -> {
+        bbb53.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb53.getText() + "d"), 50d};
             double[] ans = Funcs.calculate(data, "dBmkV_to_dBmkA");
             bbb51.setText(String.valueOf(ans[0]));
         });
-        bbb55.setOnAction(event -> {
+        bbb55.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb55.getText() + "d"), Double.parseDouble(bbb52.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBmkV_to_dBmkA");
             bbb54.setText(String.valueOf(ans[0]));
         });
-        bbb52.setOnAction(event -> {
+        bbb52.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb55.getText() + "d"), Double.parseDouble(bbb52.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBmkV_to_dBmkA");
             bbb54.setText(String.valueOf(ans[0]));
@@ -741,73 +741,73 @@ public class Controller {
         // ----------------------------------------------------
 
 
-        aaa1.setOnAction(event -> {
+        aaa1.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(aaa1.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBmkV/m_to_V/m");
             aaa2.setText(String.valueOf(ans[0]));
         });
 
-        aaa3.setOnAction(event -> {
+        aaa3.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(aaa3.getText() + "d")};
             double[] ans = Funcs.calculate(data, "V/m_to_dBmkV/m");
             aaa4.setText(String.valueOf(ans[0]));
         });
 
-        aaa5.setOnAction(event -> {
+        aaa5.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(aaa5.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBmkV/m_to_dBmW/m^2");
             aaa6.setText(String.valueOf(ans[0]));
         });
 
-        aaa7.setOnAction(event -> {
+        aaa7.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(aaa7.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBmW/m^2_to_dBmkV/m");
             aaa8.setText(String.valueOf(ans[0]));
         });
 
-        aaa9.setOnAction(event -> {
+        aaa9.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(aaa9.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBmkV/m_to_dBmkA/m");
             aaa10.setText(String.valueOf(ans[0]));
         });
 
-        aaa11.setOnAction(event -> {
+        aaa11.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(aaa11.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBmkA/m_to_dBmkV/m");
             aaa12.setText(String.valueOf(ans[0]));
         });
 
-        aaaaaa12.setOnAction(event -> {
+        aaaaaa12.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(aaaaaa12.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBmkA/m_to_dBpT");
             aaaaaa13.setText(String.valueOf(ans[0]));
         });
 
-        aaa13.setOnAction(event -> {
+        aaa13.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(aaa13.getText() + "d")};
             double[] ans = Funcs.calculate(data, "dBpT_to_dBmkA/m");
             aaa14.setText(String.valueOf(ans[0]));
         });
 
-        aaa15.setOnAction(event -> {
+        aaa15.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(aaa15.getText() + "d")};
             double[] ans = Funcs.calculate(data, "W/m^2_to_V/m");
             aaa16.setText(String.valueOf(ans[0]));
         });
 
-        aaa17.setOnAction(event -> {
+        aaa17.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(aaa17.getText() + "d")};
             double[] ans = Funcs.calculate(data, "V/m_to_W/m^2");
             aaa18.setText(String.valueOf(ans[0]));
         });
 
-        aaa19.setOnAction(event -> {
+        aaa19.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(aaa19.getText() + "d")};
             double[] ans = Funcs.calculate(data, "mkT_to_A/m");
             aaa20.setText(String.valueOf(ans[0]));
         });
 
-        aaa21.setOnAction(event -> {
+        aaa21.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(aaa21.getText() + "d")};
             double[] ans = Funcs.calculate(data, "A/m_to_mkT");
             aaa22.setText(String.valueOf(ans[0]));
@@ -817,31 +817,31 @@ public class Controller {
         // ------- E-FIELD ANTENNAS ---------------------------
         // ----------------------------------------------------
 
-        bbb151.setOnAction(event -> {
+        bbb151.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb151.getText() + "d"), Double.parseDouble(bbb161.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Correction_Factor_0");
             bbb171.setText(String.valueOf(ans[0]));
         });
-        bbb161.setOnAction(event -> {
+        bbb161.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb151.getText() + "d"), Double.parseDouble(bbb161.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Correction_Factor_0");
             bbb171.setText(String.valueOf(ans[0]));
         });
 
 
-        bbb141.setOnAction(event -> {
+        bbb141.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb141.getText() + "d"), Double.parseDouble(bbb152.getText() + "d"),
                     Double.parseDouble(bbb162.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Field_Strength");
             bbb172.setText(String.valueOf(ans[0]));
         });
-        bbb152.setOnAction(event -> {
+        bbb152.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb141.getText() + "d"), Double.parseDouble(bbb152.getText() + "d"),
                     Double.parseDouble(bbb162.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Field_Strength");
             bbb172.setText(String.valueOf(ans[0]));
         });
-        bbb162.setOnAction(event -> {
+        bbb162.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb141.getText() + "d"), Double.parseDouble(bbb152.getText() + "d"),
                     Double.parseDouble(bbb162.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Field_Strength");
@@ -849,19 +849,19 @@ public class Controller {
         });
 
 
-        bbb14.setOnAction(event -> {
+        bbb14.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb14.getText() + "d"), Double.parseDouble(bbb15.getText() + "d"),
                     Double.parseDouble(bbb16.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Required_Power");
             bbb17.setText(String.valueOf(ans[0]));
         });
-        bbb15.setOnAction(event -> {
+        bbb15.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb14.getText() + "d"), Double.parseDouble(bbb15.getText() + "d"),
                     Double.parseDouble(bbb16.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Required_Power");
             bbb17.setText(String.valueOf(ans[0]));
         });
-        bbb16.setOnAction(event -> {
+        bbb16.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb14.getText() + "d"), Double.parseDouble(bbb15.getText() + "d"),
                     Double.parseDouble(bbb16.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Required_Power");
@@ -873,31 +873,31 @@ public class Controller {
         // ------- LOOP ANTENNAS ------------------------------
         // ----------------------------------------------------
 
-        bbb18.setOnAction(event -> {
+        bbb18.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb18.getText() + "d"), Double.parseDouble(bbb19.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Correction_Factor_1");
             bbb20.setText(String.valueOf(ans[0]));
         });
-        bbb19.setOnAction(event -> {
+        bbb19.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb18.getText() + "d"), Double.parseDouble(bbb19.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Correction_Factor_1");
             bbb20.setText(String.valueOf(ans[0]));
         });
 
 
-        bbb21.setOnAction(event -> {
+        bbb21.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb21.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Assumed_E-field_for_shields_loops_0");
             bbb22.setText(String.valueOf(ans[0]));
         });
 
 
-        bbb23.setOnAction(event -> {
+        bbb23.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb23.getText() + "d"), Double.parseDouble(bbb24.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Assumed_E-field_for_shields_loops_1");
             bbb25.setText(String.valueOf(ans[0]));
         });
-        bbb24.setOnAction(event -> {
+        bbb24.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(bbb23.getText() + "d"), Double.parseDouble(bbb24.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Assumed_E-field_for_shields_loops_1");
             bbb25.setText(String.valueOf(ans[0]));
@@ -907,24 +907,24 @@ public class Controller {
         // ------- CURRENT PROBES -----------------------------
         // ----------------------------------------------------
 
-        ccc1.setOnAction(event -> {
+        ccc1.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(ccc1.getText() + "d"), Double.parseDouble(ccc2.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Correction_Factor_2");
             ccc3.setText(String.valueOf(ans[0]));
         });
-        ccc2.setOnAction(event -> {
+        ccc2.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(ccc1.getText() + "d"), Double.parseDouble(ccc2.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Correction_Factor_2");
             ccc3.setText(String.valueOf(ans[0]));
         });
 
 
-        ccc4.setOnAction(event -> {
+        ccc4.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(ccc4.getText() + "d"), Double.parseDouble(ccc5.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Power_needed");
             ccc6.setText(String.valueOf(ans[0]));
         });
-        ccc5.setOnAction(event -> {
+        ccc5.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(ccc4.getText() + "d"), Double.parseDouble(ccc5.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Power_needed");
             ccc6.setText(String.valueOf(ans[0]));
@@ -935,55 +935,55 @@ public class Controller {
         // ------- RETURN LOSS TO VSWR ------------------------
         // ----------------------------------------------------
 
-        ccc7.setOnAction(event -> {
+        ccc7.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(ccc7.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Г_0");
             ccc8.setText(String.valueOf(ans[0]));
         });
 
-        ccc9.setOnAction(event -> {
+        ccc9.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(ccc9.getText() + "d")};
             double[] ans = Funcs.calculate(data, "VSWR_0");
             ccc10.setText(String.valueOf(ans[0]));
         });
 
-        ccc11.setOnAction(event -> {
+        ccc11.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(ccc11.getText() + "d")};
             double[] ans = Funcs.calculate(data, "VSWR_1");
             ccc12.setText(String.valueOf(ans[0]));
         });
 
-        ccc13.setOnAction(event -> {
+        ccc13.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(ccc13.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Mismatch_Loss");
             ccc14.setText(String.valueOf(ans[0]));
         });
 
-        ccc15.setOnAction(event -> {
+        ccc15.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(ccc15.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Reflected_Power");
             ccc16.setText(String.valueOf(ans[0]));
         });
 
-        ccc17.setOnAction(event -> {
+        ccc17.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(ccc17.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Return_Loss_0");
             ccc18.setText(String.valueOf(ans[0]));
         });
 
-        ccc19.setOnAction(event -> {
+        ccc19.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(ccc19.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Return_Loss_1");
             ccc20.setText(String.valueOf(ans[0]));
         });
 
-        ccc21.setOnAction(event -> {
+        ccc21.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(ccc21.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Г_1");
             ccc22.setText(String.valueOf(ans[0]));
         });
 
-        ccc23.setOnAction(event -> {
+        ccc23.setOnKeyReleased(event -> {
             double[] data = {Double.parseDouble(ccc23.getText() + "d")};
             double[] ans = Funcs.calculate(data, "Through_Power");
             ccc24.setText(String.valueOf(ans[0]));
