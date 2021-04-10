@@ -507,8 +507,7 @@ public class Controller {
         });
 
         menu_exit.setOnAction(event -> {
-            //Stage currentStage = (Stage)menu_exit.getScene().getWindow();
-            //currentStage.close();
+            java.lang.System.exit(0);
         });
 
         // ----------------------------------------------------
